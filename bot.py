@@ -76,7 +76,7 @@ class Bot(Client):
                                           """)
         self.username = usr_bot_me.username
         #web-response
-        app = await web.Server(await web_server())
+        app = web.AppRunner(await web_server())
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
