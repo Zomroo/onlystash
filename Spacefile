@@ -1,0 +1,4 @@
+name: my-app
+runtime: python3.9
+dependencies:
+  - requirements.txt
