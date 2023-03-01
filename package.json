@@ -1,20 +1,14 @@
 {
-    "name": "onlystash",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-        "build": "echo \"No build specified\" && exit 1",
-        "test": "echo \"No test specified\" && exit 1",
-        "start": "node index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Zomroo/onlystash.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Zomroo/onlystash/issues"
-    },
-    "homepage": "https://github.com/Zomroo/onlystash#readme"
+  "name": "onlystash",
+  "version": "1.0.0",
+  "description": "A brief description of my project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Zoro",
+  "license": "MIT",
+  "dependencies": {
+    // add your dependencies here
+  }
 }
