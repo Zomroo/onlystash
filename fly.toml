@@ -1,5 +1,4 @@
-[app]
-  name = "onlystash"
+app = "onlystash"
 
 [build]
   cmd = "npm install && node bot.js"
