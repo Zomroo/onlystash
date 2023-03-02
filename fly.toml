@@ -1,45 +1,22 @@
-# fly.toml file for a file sharing bot
-
-# App configuration
 [app]
-  # Name of your application
   name = "onlystash"
 
-# Build process configuration
 [build]
-  # The command to build and run your bot
-  # Replace start-bot with the command to start your bot
-  # Replace python with the command for your bot's programming language
-  # Replace bot.py with the name of your bot's main file
   cmd = "npm install && node bot.js"
 
-# Runtime configuration
 [runtime]
-  # The port your bot listens on
   port = 8080
 
-# Mount storage volume
 [[mounts]]
-  # Name of the volume
   destination = "/mnt/files"
-
-  # Specify the directory you want to mount
-  # This is relative to the root of your repo
   source = "files/"
-
-  # Filesystem type to use, currently only "local" is supported
   type = "local"
 
-# Network configuration
 [network]
-  # Expose the port your bot listens on to the internet
-  # This is required for others to be able to access your bot
-  # Replace 8080 with the port your bot listens on
   [[services]]
     internal_port = 8080
     protocol = "tcp"
 
-  # Define your domain names
   [[services.ports]]
     port = 80
     protocol = "tcp"
