@@ -31,7 +31,7 @@ PORT = os.environ.get("PORT", "8080")
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1284037435 5363524741 5573902800").split()):
+    for x in (os.environ.get("ADMINS", "5148561602").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -55,7 +55,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
+ADMINS.append(5148561602)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
