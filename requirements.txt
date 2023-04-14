@@ -1,5 +1,5 @@
 # --- For-Bot-Working --------- #
-pyrogram
+pyrogram==2.0.103
 TgCrypto
 Pyromod
 aiohttp
